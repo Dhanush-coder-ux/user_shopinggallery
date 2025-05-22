@@ -1,4 +1,4 @@
-import search from './search.png'
+
 import user from './user.png'
 import  cart from './cart.png'
 import cart2 from './cart-svgrepo-com.svg'
@@ -53,7 +53,7 @@ import homesvg from './homesvg.svg'
 import collectionsvg from './collection.svg'
 import aboutsvg from './about.svg'
 export const assets={
-    search,
+    
     bestseller,
     user,
     myorders,
