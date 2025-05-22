@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets";
-import ProductItem from "./ProductItem";
+
 import { motion } from "framer-motion";
 import { fadein } from "../variants";
+import ProductItem from "./Productitem";
 
 const RelatedProducts = ({ category, subcategory }) => {
   const { products } = useContext(ShopContext);

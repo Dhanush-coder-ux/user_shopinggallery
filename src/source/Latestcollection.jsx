@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import Productitem from "./Productitem";
+
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets";
 import { motion } from 'framer-motion';
 import { fadein } from '../variants';
+import ProductItem from "./Productitem";
 
 const Latestcollection = () => {
   const { products } = useContext(ShopContext);
@@ -56,7 +57,7 @@ const Latestcollection = () => {
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
         {latest.map((item,index) => (
-          <Productitem 
+          <ProductItem
             key={index}
             id={item.id} 
             img={item.images} 
