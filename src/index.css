@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+
+
+ @theme {
+  --font-primary: "Teko", serif;
+  --font-kern: "Triodion", serif;
+  --text-one: text-red-500;
+  
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+}
+a.active hr{
+  display: block;
+  
+}
+.sidebar {
+  z-index: 50;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.embla__slide {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+
+.embla__slide {
+  flex: 0 0 100%; /* Default slide covers 100% of the viewport */
+}
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+}
+@keyframes appear {
+  from {
+    
+    transform: scale(0.5);
+  }
+  to {
+  
+    transform: scale(1);
+  }
+}
+
+.body {
+  animation: appear 1s linear;
+  animation-timeline: view(); /* Experimental feature */
+  animation-range: entry 0% cover 40%;
+}
